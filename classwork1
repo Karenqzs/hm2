@@ -1,0 +1,37 @@
+function setup() {
+  createCanvas(400, 400);
+  
+  frameRate(3);
+}
+
+function draw() {
+  background(100,100,230);
+
+  noStroke();
+
+  fill(255, 0, 255);
+  rect(0, 300, 50, 80);
+
+  fill(220, 100, 50);
+  triangle(random(50, 100), random(100,150), random(250,300), random(200,250), random(150,200),random(150,200), 200);
+  
+
+  fill(220, 100, 50);
+  triangle(random(150,200), 100, 250, 200, 150, 200);
+
+  fill(200, 235, 0);
+  quad(100, 130, 100, 80, 69, 63, 30, 76);
+
+  stroke(200,200,100);
+  strokeWeight(10);
+  strokeCap(PROJECT);
+  line(random(0,100), 0, 80, 400);
+  line(0, 320, 400, 320);
+  line(370, 320, 370, 400);
+
+  strokeWeight(10);
+  line(0, 150, 80, 150);
+
+  strokeWeight(15);
+  line(0, 360, 400, 360);
+}

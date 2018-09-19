@@ -1,0 +1,25 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+var x = 10;
+var changeInX = 6;
+
+function draw() {
+  background(220);
+  
+  noStroke();
+  fill(155,0,200,60)
+  ellipse(x, 200, 60);
+  
+  
+  x = x + changeInX;
+  
+  if (x > width) {
+    changeInX = -6;
+  }
+  
+  if (x < 0) {
+    changeInX = 6;
+  }
+}
